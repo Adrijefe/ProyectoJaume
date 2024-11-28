@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Lista de Jugadores de Tenis",
+  "type": "object",
+  "properties": {
+
+    "jugadores": {
+      "type": "array",
+      "description": "Lista de los mejores jugadores de tenis",
+      "items": {
+        "type": "object",
+        "properties": {
+          "nombre": {
+            "type": "string",
+            "description": "Nombre del jugador"
+          },
+          "pais": {
+            "type": "string",
+            "description": "País de origen del jugador"
+          },
+          "titulos_grand_slam": {
+            "type": "integer",
+            "description": "Número de títulos de Grand Slam ganados por el jugador",
+            "minimum": 0
+          },
+          "anos_actividad": {
+            "type": "string",
+            "description": "Periodo de actividad del jugador, usando el formato 'YYYY-YYYY' o 'YYYY-presente'",
+            "pattern": "^(\\d{4}-(\\d{4}|presente))$"
+          }
+        },
+        "required": ["nombre", "pais", "titulos_grand_slam", "anos_actividad"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["jugadores"],
+  "additionalProperties": false
+}

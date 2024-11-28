@@ -1,0 +1,53 @@
+{
+  "jugadores": [
+    {
+      "nombre": "RogerFederer",
+      "pais": "Suiza",
+      "titulos_grand_slam": 20,
+      "anos_actividad": "1998-2021",
+      "Imagen": "https://www.google.com/imgres?q=imagen%20de%20Roger%20Federe&imgurl=https%3A%2F%2Fmedia.revistagq.com%2Fphotos%2F61522a221d29f507cd989f7a%2F16%3A9%2Fw_2560%252Cc_limit%2FGettyImages-1327542158.jpg&imgrefurl=https%3A%2F%2Fwww.revistagq.com%2Fnoticias%2Farticulo%2Froger-federer-entrevista&docid=MwNffKLUNE_75M&tbnid=5YeBx15U5Ojf_M&vet=12ahUKEwjOgMGui9SJAxUuRaQEHbB6CFYQM3oECEwQAA..i&w=2560&h=1440&hcb=2&ved=2ahUKEwjOgMGui9SJAxUuRaQEHbB6CFYQM3oECEwQAA"
+    },
+    {
+      "nombre": "RafaelNadal",
+      "pais": "España",
+      "titulos_grand_slam": 22,
+      "anos_actividad": "2001-presente",
+      "Imagen": "https://www.google.com/imgres?q=imagen%20de%20rafa%20nadal&imgurl=https%3A%2F%2Fwww.centrosenlinea.com%2Fwp-content%2Fuploads%2F2021%2F03%2FRafa-Nadal-foto-portada.jpg&imgrefurl=https%3A%2F%2Fwww.centrosenlinea.com%2Fanalizando-rafa-nadal%2F&docid=td6PlhtXifCp7M&tbnid=5atUcIeLbQFaUM&vet=12ahUKEwiS6YyhitSJAxW5U6QEHT9dGHIQM3oECCUQAA..i&w=1080&h=1077&hcb=2&ved=2ahUKEwiS6YyhitSJAxW5U6QEHT9dGHIQM3oECCUQAA"
+    },
+    {
+      "nombre": "NovakDjokovic",
+      "pais": "Serbia",
+      "titulos_grand_slam": 24,
+      "anos_actividad": "2003-presente",
+      "Imagen": "https://www.google.com/imgres?q=imagen%20de%20novak%20djokovic&imgurl=https%3A%2F%2Fimages.pagina12.com.ar%2Fstyles%2Ffocal_3_2_470x313%2Fpublic%2F2024-07%2F854290-novak-20afp.jpg%3Fh%3Dada05aa9%26itok%3DpyLPtxn6&imgrefurl=https%3A%2F%2Fwww.pagina12.com.ar%2F750655-wimbledon-novak-djokovic-gano-y-se-peleo-con-el-publico&docid=9iHmKNLI7j0t_M&tbnid=lTdQttTFUvZCsM&vet=12ahUKEwiP14DAitSJAxUiR6QEHQ48PYoQM3oECGcQAA..i&w=470&h=313&hcb=2&ved=2ahUKEwiP14DAitSJAxUiR6QEHQ48PYoQM3oECGcQAA"
+    },
+    {
+      "nombre": "RodLaver",
+      "pais": "Australia",
+      "titulos_grand_slam": 11,
+      "anos_actividad": "1962-1979",
+      "Imagen": "https://www.google.com/imgres?q=imagen%20de%20Rod%20Laver&imgurl=https%3A%2F%2Fmedia.gettyimages.com%2Fid%2F1496897977%2Fes%2Ffoto%2Faustralian-tennis-player-rod-laver-in-action-during-the-final-of-the-mens-singles-tournament.jpg%3Fs%3D612x612%26w%3Dgi%26k%3D20%26c%3Daf7AN8DhsIgXOMfZIKSRdxjSBPasH-2AtIf3t_vN8QY%3D&imgrefurl=https%3A%2F%2Fwww.gettyimages.es%2Ffotos%2Frod-laver&docid=6jGVtCEwQiodnM&tbnid=tg177i_8tcNW3M&vet=12ahUKEwis5N_RitSJAxUhTKQEHR6AKasQM3oECGcQAA..i&w=612&h=599&hcb=2&ved=2ahUKEwis5N_RitSJAxUhTKQEHR6AKasQM3oECGcQAA"
+    },
+    {
+      "nombre": "BjörnBorg",
+      "pais": "Suecia",
+      "titulos_grand_slam": 11,
+      "anos_actividad": "1973-1983",
+      "Imagen": "https://www.google.com/imgres?q=imagen%20de%20Bj%C3%B6rn%20Borg&imgurl=https%3A%2F%2Fcdn.artphotolimited.com%2Fimages%2F5b9fc1ecac06024957be8806%2F1000x1000%2Fbjorn-borg-en-pleine-concentration.jpg&imgrefurl=https%3A%2F%2Fwww.artphotolimited.com%2Fes%2Ftemas%2Fdeportes%2Fdeporte-de-raqueta%2Ftenis%2Ffoto%2Fbridgeman-images%2Fbjorn-borg-en-plena-concentracion&docid=KPyNEmj9swB_EM&tbnid=RGOaq9Ar0LTfVM&vet=12ahUKEwjr7ZnjitSJAxUdSaQEHfX4HMoQM3oECE8QAA..i&w=1000&h=799&hcb=2&ved=2ahUKEwjr7ZnjitSJAxUdSaQEHfX4HMoQM3oECE8QAA"
+    },
+    {
+      "nombre": "PeteSampras",
+      "pais": "Estados Unidos",
+      "titulos_grand_slam": 14,
+      "anos_actividad": "1988-2002",
+      "Imagen":"https://www.google.com/imgres?q=imagen%20de%20Pete%20Sampras&imgurl=https%3A%2F%2Fcanaltenis.com%2Fwp-content%2Fuploads%2F2020%2F08%2Fpete.jpg&imgrefurl=https%3A%2F%2Fcanaltenis.com%2Fpete-sampras-curiosidades-tenis%2F&docid=AMaA3YdmoSunVM&tbnid=DL7QBRWFANTI6M&vet=12ahUKEwi12Lr-itSJAxVjfKQEHVBOM8gQM3oECFUQAA..i&w=1920&h=1080&hcb=2&ved=2ahUKEwi12Lr-itSJAxVjfKQEHVBOM8gQM3oECFUQAA"
+    },
+    {
+      "nombre": "AndreAgassi",
+      "pais": "Estados Unidos",
+      "titulos_grand_slam": 8,
+      "anos_actividad": "1986-2006",
+      "Imagen": "https://www.google.com/imgres?q=imagen%20de%20Andre%20Agassi&imgurl=https%3A%2F%2Festaticos-cdn.prensaiberica.es%2Fclip%2F801723aa-7531-45b8-bdff-a83b690c4bf3_alta-libre-aspect-ratio_default_0.jpg&imgrefurl=https%3A%2F%2Fwww.sport.es%2Fes%2Fnoticias%2F45-aniversario%2Fandre-agassi-hombre-siete-grandes-103704099&docid=hCx5YcllK3UeXM&tbnid=qIRUFm293qpOhM&vet=12ahUKEwijhuSUi9SJAxUpUKQEHUQOCI8QM3oECBYQAA..i&w=1200&h=675&hcb=2&ved=2ahUKEwijhuSUi9SJAxUpUKQEHUQOCI8QM3oECBYQAA"
+    }
+  ]
+}

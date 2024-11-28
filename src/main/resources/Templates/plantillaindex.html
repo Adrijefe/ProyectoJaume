@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Jugadores</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+
+
+
+</head>
+<body>
+<header>
+    <h1>Jugadores de Tenis</h1>
+    <p>Explora los perfiles de los jugadores más destacados.</p>
+</header>
+<div>
+    <h2>Lista de Jugadores</h2>
+    <ul>
+        <li th:each="jugador : ${Jugadores}">
+            <span th:text="${jugador.nombre}"></span>
+            <a th:href="${jugador.nombre} + '.html'" th:text="${jugador.nombre}"></a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

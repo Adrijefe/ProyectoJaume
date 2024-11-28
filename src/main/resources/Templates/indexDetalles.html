@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CSS/style1.css">
+
+
+    <header>
+        <h1 th:text="${nom}"></h1>
+        <h2 th:text="${descripcion}"></h2>
+    </header>
+</head>
+<body>
+<h1 th:text="${nombre}"></h1>
+<p><strong>Pais:</strong> <span th:text="${pais}"></span></p>
+<p><strong>Titulos de Grand Slam:</strong> <span th:text="${titulos_grand_slam}"></span></p>
+<p><strong>Anos de Actividad:</strong> <span th:text="${anos_actividad}"></span></p>
+<img th:src="${Imagen}" alt="" />
+
+<p><a th:href="index.html">Volver a la lista</a></p>
+</body>
+</html>

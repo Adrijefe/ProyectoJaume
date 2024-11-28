@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jugadores de Tenis</title>
+</head>
+<body>
+<h1>Lista de Jugadores de Tenis</h1>
+<ul>
+    <th:block th:each="jugador : ${jugadores}">
+        <li>
+            <h2 th:text="${jugador.nombre}">Nombre del Jugador</h2>
+            <p><strong>Pais:</strong> <span th:text="${jugador.pais}">Pais</span></p>
+            <p><strong>Titulos de Grand Slam:</strong> <span th:text="${jugador.titulosGrandSlam}">0</span></p>
+            <p><strong>Anos de Actividad:</strong> <span th:text="${jugador.anosActividad}">Anos</span></p>
+            <img th:src="${jugador.Imagen}" alt="Imagen de Jugador" width="300">
+        </li>
+    </th:block>
+</ul>
+</body>
+</html>
