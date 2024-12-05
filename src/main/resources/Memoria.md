@@ -2,7 +2,7 @@
 
 Mi proyecto tiene como objetivo principal la creación automática de páginas web dinámicas que la he hecho de jugadores de tenis, partiendo de un archivo JSON que contiene información relevante sobre cada jugador. El desarrollo integra tecnologías como **Java**, **Thymeleaf** y **CSS**, lo que permite la generación eficiente de contenido estructurado y visualmente atractivo (esa es la intención mas o menos). También se incluye la creación de un archivo **RSS**, facilitando la distribución de información mediante lectores de este tipo.
 
-A lo largo del desarrollo se experimentaron retos en la implementación de CSS, el manejo de plantillas HTML y la manipulación dinámica de datos. Este documento detalla las herramientas utilizadas, el flujo de trabajo seguido, los desafíos encontrados y las soluciones aplicadas.
+A lo largo del desarrollo se experimentaron retos en la implementación de CSS, el manejo de plantillas HTML y la manipulación dinámica de datos. Este documento detalla las herramientas utilizadas, los desafíos encontrados y las soluciones aplicadas.
 
 ---
 
@@ -397,7 +397,7 @@ A continuación tenemos las dependencias utilizadas en el proyecto.
 
 
 </project>
-````
+``````
 ---
 ## Principales Errores
 

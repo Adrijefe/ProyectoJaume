@@ -17,7 +17,6 @@ public class Main {
             try (FileInputStream inputStream = new FileInputStream("src/main/resources/config.ini")) {
                 props.load(inputStream);
             }
-
             String nom = props.getProperty("nom");
             String descripcion = props.getProperty("descripcion");
 
