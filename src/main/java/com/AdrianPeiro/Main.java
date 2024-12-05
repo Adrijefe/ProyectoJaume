@@ -26,7 +26,7 @@ public class Main {
             ObjectMapper mapper = new ObjectMapper();
             ListaJugadores listaJugadores = mapper.readValue(json, ListaJugadores.class);
 
-            // Configurar el motor de plantillas Thymeleaf
+            // Configurar las plantillas Thymeleaf
             ClassLoaderTemplateResolver templateResolver = new ClassLoaderTemplateResolver();
             templateResolver.setPrefix("/Templates/");
             templateResolver.setSuffix(".html");
@@ -57,10 +57,41 @@ public class Main {
                 String jugadorTemplate = templateEngine.process("indexDetalles", context);
                 String nombreArchivo = "src/main/resources/HTML/" + j.getNombre().replaceAll("\\s+", "_") + ".html";
                 escribirHTML(jugadorTemplate, nombreArchivo);
+
+                // Generar archivo RSS
+                generarRSS("src/main/resources/rss.xml", listaJugadores.getJugadores());
             }
         } catch (IOException e) {
             System.err.println("Error: " + e.getMessage());
             e.printStackTrace();
+        }
+    }
+    public static void generarRSS(String rutaArchivo, List<Jugadores> jugadores) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(rutaArchivo))) {
+            writer.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
+            writer.write("<rss version=\"2.0\">\n");
+            writer.write("<channel>\n");
+            writer.write("<title>Mejores Tenistas</title>\n");
+            writer.write("<description>Lista de los mejores tenistas de la historia</description>\n");
+            writer.write("<link>http://localhost/tenistas</link>\n");
+
+            for (Jugadores jugador : jugadores) {
+                writer.write("<item>\n");
+                writer.write("<title>" + jugador.getNombre() + "</title>\n");
+                writer.write("<description>\n");
+                writer.write("País: " + jugador.getPais() + "\n");
+                writer.write("Títulos de Grand Slam: " + jugador.getTitulosGrandSlam() + "\n");
+                writer.write("Años de actividad: " + jugador.getAnosActividad() + "\n");
+                writer.write("</description>\n");
+                writer.write("<link>http://localhost/tenistas/" + jugador.getNombre().replaceAll("\\s+", "") + ".html</link>\n");
+                writer.write("</item>\n");
+            }
+
+            writer.write("</channel>\n");
+            writer.write("</rss>\n");
+        } catch (IOException e) {
+            System.err.println("Error al escribir el archivo RSS: " + e.getMessage());
+            throw new RuntimeException("Error al escribir el archivo RSS", e);
         }
     }
 
