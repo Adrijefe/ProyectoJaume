@@ -76,7 +76,7 @@ public class Jugadores {
                 ", pais='" + pais + '\'' +
                 ", titulosGrandSlam=" + titulosGrandSlam +
                 ", anosActividad='" + anosActividad + '\'' +
-                ", imagen='" + imagen + '\'' + // Añado la imagen al toString
+                ", imagen='" + imagen + '\'' +
                 '}';
     }
 }

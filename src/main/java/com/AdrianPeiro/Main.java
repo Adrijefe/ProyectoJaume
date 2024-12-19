@@ -35,7 +35,7 @@ public class Main {
 
             // Crear el contexto para la plantilla principal
             Context context = new Context();
-            context.setVariable("nombre", nom);
+            context.setVariable("nom", nom);
             context.setVariable("descripcion", descripcion);
             context.setVariable("Jugadores", listaJugadores.getJugadores());
 
@@ -47,21 +47,22 @@ public class Main {
             // Procesar cada jugador individualmente utilizando indexDetalles.html
             List<Jugadores> jugadores = listaJugadores.getJugadores();
             for (Jugadores j : jugadores) {
-                context.setVariable("nombre", j.getNombre());
+                context.setVariable(  "nombre", j.getNombre());
                 context.setVariable("pais", j.getPais());
                 context.setVariable("titulos_grand_slam", j.getTitulosGrandSlam());
                 context.setVariable("anos_actividad", j.getAnosActividad());
                 context.setVariable("Imagen", j.getImagen());
 
                 String jugadorTemplate = templateEngine.process("indexDetalles", context);
-                String nombreArchivo = "src/main/resources/HTML/" + j.getNombre().replaceAll("\\s+", "_") + ".html";
+                String nombreArchivo = "src/main/resources/HTML/" + j.getNombre().replaceAll("\\s+", "") + ".html";
                 escribirHTML(jugadorTemplate, nombreArchivo);
 
-                // Generar archivo RSS
-                generarRSS("src/main/resources/rss.xml", listaJugadores.getJugadores());
+
             }
+            // Generar archivo RSS
+            generarRSS("src/main/resources/rss.xml", listaJugadores.getJugadores());
         } catch (IOException e) {
-            System.err.println("Error: " + e.getMessage());
+            System.out.println("Error, lo siento: " + e.getMessage());
             e.printStackTrace();
         }
     }
@@ -85,12 +86,10 @@ public class Main {
                 writer.write("<link>http://localhost/tenistas/" + jugador.getNombre().replaceAll("\\s+", "") + ".html</link>\n");
                 writer.write("</item>\n");
             }
-
             writer.write("</channel>\n");
             writer.write("</rss>\n");
         } catch (IOException e) {
-            System.err.println("Error al escribir el archivo RSS: " + e.getMessage());
-            throw new RuntimeException("Error al escribir el archivo RSS", e);
+            System.out.println(e.getMessage());
         }
     }
 
@@ -98,8 +97,7 @@ public class Main {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(nombrefichero))) {
             writer.write(html);
         } catch (IOException e) {
-            System.err.println("Error al escribir el archivo HTML: " + e.getMessage());
-            throw new RuntimeException("Error al escribir el archivo HTML", e);
+            System.out.println(e.getMessage());
         }
     }
 }
