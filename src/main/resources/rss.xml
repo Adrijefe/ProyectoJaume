@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+<title>Mejores Tenistas</title>
+<description>Lista de los mejores tenistas de la historia</description>
+<link>http://localhost/tenistas</link>
+<item>
+<title>RogerFederer</title>
+<description>
+País: Suiza
+Títulos de Grand Slam: 20
+Años de actividad: 1998-2021
+</description>
+<link>http://localhost/tenistas/RogerFederer.html</link>
+</item>
+<item>
+<title>RafaelNadal</title>
+<description>
+País: España
+Títulos de Grand Slam: 22
+Años de actividad: 2001-2024
+</description>
+<link>http://localhost/tenistas/RafaelNadal.html</link>
+</item>
+<item>
+<title>NovakDjokovic</title>
+<description>
+País: Serbia
+Títulos de Grand Slam: 24
+Años de actividad: 2003-presente
+</description>
+<link>http://localhost/tenistas/NovakDjokovic.html</link>
+</item>
+<item>
+<title>RodLaver</title>
+<description>
+País: Australia
+Títulos de Grand Slam: 11
+Años de actividad: 1962-1979
+</description>
+<link>http://localhost/tenistas/RodLaver.html</link>
+</item>
+<item>
+<title>BjörnBorg</title>
+<description>
+País: Suecia
+Títulos de Grand Slam: 11
+Años de actividad: 1973-1983
+</description>
+<link>http://localhost/tenistas/BjörnBorg.html</link>
+</item>
+<item>
+<title>PeteSampras</title>
+<description>
+País: Estados Unidos
+Títulos de Grand Slam: 14
+Años de actividad: 1988-2002
+</description>
+<link>http://localhost/tenistas/PeteSampras.html</link>
+</item>
+<item>
+<title>AndreAgassi</title>
+<description>
+País: Estados Unidos
+Títulos de Grand Slam: 8
+Años de actividad: 1986-2006
+</description>
+<link>http://localhost/tenistas/AndreAgassi.html</link>
+</item>
+</channel>
+</rss>
